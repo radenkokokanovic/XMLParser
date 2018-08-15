@@ -1,0 +1,5 @@
+2018-08-15 13:37:00 DEBUG LogExampleDemo:19 - This is debug : mkyong
+2018-08-15 13:37:00 INFO  LogExampleDemo:23 - This is info : mkyong
+2018-08-15 13:37:00 WARN  LogExampleDemo:26 - This is warn : mkyong
+2018-08-15 13:37:00 ERROR LogExampleDemo:27 - This is error : mkyong
+2018-08-15 13:37:00 FATAL LogExampleDemo:28 - This is fatal : mkyong
