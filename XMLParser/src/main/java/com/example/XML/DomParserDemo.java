@@ -24,12 +24,24 @@ public class DomParserDemo {
 	         NodeList nList = doc.getElementsByTagName("student");
 	         System.out.println("----------------------------");
 	         
+	         
+	         System.out.println("Duzina --> "+nList.getLength());
 	         for (int temp = 0; temp < nList.getLength(); temp++) {
-	            Node nNode = nList.item(temp);
+	          
+	        	 
+	        	 Node nNode = nList.item(temp);
+	            
+	            
 	            System.out.println("\nCurrent Element :" + nNode.getNodeName());
 	            
 	            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 	               Element eElement = (Element) nNode;
+	               
+	               
+	               
+	               System.out.println("Moj element je => " +eElement.getElementsByTagName("mojTag").item(0).getTextContent());
+	               System.out.println("Dodao sam element => "+eElement.getElementsByTagName("mojTag2").item(0).getTextContent());
+	               
 	               System.out.println("Student roll no : " 
 	                  + eElement.getAttribute("rollno"));
 	               System.out.println("First Name : " 
